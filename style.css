@@ -1,0 +1,30 @@
+body {
+  background-color: #7a4626;
+  text-align: center;
+}
+div {
+  background-color: #7a4626;
+  text-align: center;
+  grid-area: sidebar;
+}
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  color: #fabe98;
+}
+p {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  color: #fabe98;
+}
+
+footer {
+  font-size: 0.8em;
+  text-align: center;
+  color: beige;
+  margin-top: 20px;
+}
