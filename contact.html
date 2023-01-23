@@ -1,0 +1,52 @@
+<html>
+  <link rel="stylesheet" href="contact.css" />
+  <body>
+    <header>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+    </header>
+
+    <div class="main-div">
+      <div id="info" class="contact-us">
+        <h1>Contact Us</h1>
+        <p>400 FrontStreet, 3rd Floor. Brooklyn, NY 11201</p>
+        <p>info@escr.com</p>
+        <p>212-999-000</p>
+      </div>
+
+      <div id="info" class="contact-form">
+        <form action="submit">
+          <label for="first-name">First Name</label>
+          <input
+            type="text"
+            id="firt-name"
+            name="firstname"
+            placeholder="Your first name.."
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="Email">Email Adress</label>
+          <input type="email" />
+          <br />
+          <label for="subject">Message</label>
+          <textarea
+            id="text-box"
+            name="text-box"
+            placeholder="Leave us a message!"
+            style="height: 100px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
