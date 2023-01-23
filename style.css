@@ -7,6 +7,9 @@ header {
   background: #c79779;
   border-radius: 25px;
 }
+button {
+  text-align: center;
+}
 
 div {
   background-color: #7a4626;
@@ -61,6 +64,7 @@ img {
   img {
     width: 200px;
     height: 200px;
+    border-radius: 25px;
   }
   h1 {
     font-size: 25px;
@@ -76,6 +80,10 @@ img {
   div {
     grid-template-columns: 1fr;
     width: 324px;
+  }
+  #random-drink-result {
+    background-color: "#472916";
+    border-radius: 25px;
   }
   footer {
     padding: 25px;

@@ -13,19 +13,30 @@ button.addEventListener("click", async () =>
       let drinkImage = document.createElement("img");
       drinkName.innerHTML = data.drinks[0].strDrink;
       drinkImage.src = data.drinks[0].strDrinkThumb;
-      let drinkInsuctions = document.createElement("p");
-      let drinkIng = document.createElement("p");
-      let drinkMes = document.createElement("p");
 
-      // let currentDrink = data.dinks[0];
-
-      // for (let i of currentDrink) {
-      // }
-
+      // console.log(data.p);
       let randomSection = document.getElementById("random-drink-result");
 
       randomSection.append(drinkName, drinkImage);
       randomSection.prepend(button);
+
+      for (let i = 1; i < 16; i++) {
+        let drinkIng = document.createElement("p");
+        drinkIng.innerHTML = data.drinks[0][`strIngredient${[i]}`];
+        drinkIng.classList.add("ing");
+        console.log(drinkIng);
+
+        let drinkMes = document.createElement("p");
+        drinkMes.innerHTML = data.drinks[0][`strMeasure${[i]}`];
+        drinkMes.classList.add("mes");
+        drinkIngAndMes = document.createElement("p");
+        drinkIngAndMes.innerHTML = `${drinkMes.innerHTML}  ${drinkIng.innerHTML}`;
+        randomSection.append(drinkIngAndMes);
+        // randomSection.append(drinkIng);
+      }
+      let drinkIns = document.createElement("p");
+      drinkIns.innerHTML = data.drinks[0].strInstructions;
+      randomSection.append(drinkIns);
     })
 );
 
